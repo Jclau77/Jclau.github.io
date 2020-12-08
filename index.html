@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <!--Social Media-->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <!--Google fonts-->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Goldman:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap"
+      rel="stylesheet"
+    />
+    <title>WEB222 Store</title>
+    <link rel="stylesheet" href="style.css" />
+    <style></style>
+
+    <script src="script.js"></script>
+  </head>
+  <body>
+    <!--Create header for top of web page-->
+    <header class="header">
+      <section class="section1">
+        <div class="intro">
+          <div class="text"></div>
+        </div>
+      </section>
+      <!--Create background header-->
+      <div class="header-Background"></div>
+      <div class="header-navigate">
+        <!--Create logo-->
+        <div class="Search-bar">
+          <img src="images/logo.png" alt="" />
+
+          <h4>PC Gaming store</h4>
+
+          <input id="hid" class="form" type="text" />
+          <!--Create Search icon, icons from fontawesome-->
+          <span id="hid2" class="input"><i class="fa fa-search"></i></span>
+        </div>
+
+        <!--Menu Class-->
+        <div class="menu">
+          <ul>
+            <li>
+              <!--Basket picture from fontAwesome.com-->
+              <a href="#"><i class="fa fa-shopping-cart"></i>cart</a>
+            </li>
+            <li><a href="%">Sign up</a></li>
+            <li><a href="%">Log in</a></li>
+          </ul>
+        </div>
+        <!--Sell menu-->
+        <div class="sell">
+          <ul>
+            <li id="home"><a href="index.html">Home</a></li>
+            <li id="onsale"><a href="#">Items on sale</a></li>
+            <li id="GPUs"><a href="#">Graphics Cards</a></li>
+            <li id="CPUs"><a href="#">CPUs</a></li>
+            <li id="peripherals"><a href="#">Peripherals</a></li>
+            <li id="accessories"><a href="#">Accessories</a></li>
+            <li id="Contact-Us"><a href="contact.html">Contact us</a></li>
+          </ul>
+        </div>
+      </div>
+    </header>
+    <!--Create category-->
+    <section class="categories">
+      <div id="slider" class="slider">
+        <!--Image-->
+      </div>
+      <div id="caption" class="caption"></div>
+    </section>
+
+    <!--Main section-->
+    <section class="main">
+      <h3 id="subtitle-header" class="about">All Products</h3>
+
+      <div id="productGoods"></div>
+    </section>
+
+    <!--Create Footer-->
+    <footer>
+      <div class="center-text row">
+        <div class="col-mid-4">
+          <h4>Follow us for updates</h4>
+          <a href="https://www.instagram.com" class="fa fa-instagram"></a>
+          <a href="https://www.facebook.com" class="fa fa-facebook"></a>
+          <a href="https://www.twitter.com" class="fa fa-twitter"></a>
+          <a href="https://www.snapchat.com" class="fa fa-snapchat"></a>
+        </div>
+        <div class="col-mid-4">
+          <p class="certified:">WEB222 page by: Justin Lau</p>
+        </div>
+        <div class="col-mid-4">
+          <form action="https://formspree.io/f/xbjpakno" method="POST">
+            <label for="email">Stay updated for future deals!</label>
+            <input type="email" name="email" id="email1" required />
+            <button type="submit" class="btn1" value="submit">Get notified!</button>
+          </form>
+        </div>
+      </div>
+    </footer>
+    <!--
+      Introduction
+      ------------
+
+      You are asked to create an online store in HTML, CSS, and JavaScript.
+      Please implement a store with all of the following requirements.
+
+      You may remove this comment and place all your HTML in this file.
+
+      Requirements:
+
+      1. Use a JavaScript or JSON file to describe your store's items, and each
+      item's details.  For example, the price, title, description, image URL, etc.
+      should all be properties on an Object, and these Objects should all be stored
+      in one or more Arrays, for example:
+
+      [
+        {
+          name: 'Name of product',
+          description: 'Full desc of this item...'
+          price: 100,                        // NOTE: prices are often done in whole cents and then formatted to dollars/cents
+          category: 'category1',             // category of this item
+          imageUrl: 'images/item-1234.jpg',  // relative URL to image of this item
+        },
+        ...
+      ]
+
+      2. Use JavaScript and DOM programming to build the items in your store (see
+      details below on requirements).  Instead of hard-coding everything in HTML,
+      write functions to generate the cards for each item programmatically (similar
+      to how you built the countries table UI in the previous assignment).
+
+      3. Include a header across the top with your store's name, a logo,
+      and use a different background colour, web font, etc. Your header should
+      include info about what the store is, what it sells, etc.  Use some images
+      to try and draw the user in. NOTE: place all your site's images in the
+      `src/images/` directory.
+
+      4. Below the header, a multi-column layout of items you can purchase in the
+      store.  You must have at least 10 items in your store, and at least 2
+      categories of items. For example, if you are selling clothing, you might
+      have categories for Men, Women, and Children, and each category would have
+      its own set of items.  Each item should include:
+      
+        - a picture of the item
+        - the item's name or title
+        - a complete description of the item
+        - a category (i.e., each item must belong to one or more categories)
+        - a price, formatted in Canadian Dollars (i.e., en-CA)
+      
+      Each item should be its own "card" (i.e., some kind of box around each item
+      separating one from the next, with suitable whitespace between).  The HTML
+      for these cards should be generated from your JavaScript or JSON data (see 1.
+      and 2. above).
+
+      5. A category menu or "sidebar" (left, right, or top depending on your design)
+      showing the different categories of items in your store.  If a
+      user clicks on one of the categories, use CSS and JavaScript to hide all
+      other items in the store (i.e., only show items for the chosen category).
+      Make sure you include a way to return to seeing all categories, and make it
+      obvious to the user that they are only seeing a partial list of items when
+      you filter by category (i.e., use CSS and HTML to change things somehow).
+
+      6. Below the store items, a footer with the name of the store, any relevant
+      links you need to give users.  Include links and icons to any social media
+      for your store (Facebook, Twitter, etc). NOTE: you don't have to create such
+      accounts, but you can provide links to imaginary accounts.
+
+      7. Use at least two different Web Fonts for your store.  The titles should
+      be different from any regular text.  Use a free font service like
+      https://fonts.google.com/ or any other that you choose.  You can also
+      experiment with different font sizes and colours to draw attention toward
+      or away from various parts of your design.
+
+      8. Pick a colour theme using a tool like https://colorhunt.co/ with at least
+      3 colours (primary, secondary, accent), and use them throughout your site
+      for backgrounds, borders, fonts. Your store page needs to look attractive
+      and marks will be given for good a good looking site.  No one will buy from
+      a store that looks like its owners aren't professional or don't care about
+      details.  Also make sure that the colour contrast in your site is suitable
+      for everyone to read.
+
+      9. Use modern CSS to help you achieve your layout.  For example, Flexbox
+      and CSS Grid can help you create professional looking layouts.  Here
+      are some guides to get you started:
+
+       - https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Flexible_Box_Layout/Basic_Concepts_of_Flexbox
+       - https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Grid_Layout/Basic_Concepts_of_Grid_Layout
+       
+      You are also welcome to use existing CSS libraries to help you with your layout,
+      but you must also include your own styles (i.e., you can't use a library
+      for everything in your design).
+
+      10. Make sure you don't use copyrighted materials from other sites.  If you use
+      icons, fonts, images, etc., make sure you are legally permitted to reuse them,
+      and include references to indicate where you got them. Some resources to consider:
+
+        - https://unsplash.com/ for images
+        - https://fontawesome.com/ for icons
+        - https://gallery.manypixels.co/ or https://undraw.co/illustrations for illustrations (SVG)
+
+      11. Make sure you reduce the download size of images you include in your
+      store.  Your images shouldn't be larger than 1M in size.  Users don't want to
+      download 10s or 100s of megabytes of data, especially on mobile.  You can use an
+      online tool like https://squoosh.app/ to help you reduce images.  You will
+      lose marks if your images aren't optimized for the web.
+
+      12. Make sure you have no JavaScript or other errors in your Dev Tools Console.
+      Run your site, and test all aspects of it with the Console open, and fix
+      any issues you encounter.
+
+      13. Make sure your code is properly indented and commented, and that you've used
+      good naming practices for variables, functions, ids, classes, etc.
+
+      14. Have fun!  Build something you'd be proud to show future employers in
+      interviews.  Take the time to properly design and implement a beautiful and
+      functional storefront.  Maybe it will inspire you to start your own online business?
+    -->
+  </body>
+</html>

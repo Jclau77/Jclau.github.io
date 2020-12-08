@@ -1,0 +1,439 @@
+/* Add any CSS you need to this file. */
+/* Add styles for respective fonts */
+.Search-bar h4 {
+  font-family: 'Bebas Neue', sans-serif;
+  color: blue;
+}
+/* Form control */
+.form {
+  margin-top: 20px;
+  margin-bottom: 100px;
+  margin-left: 200px;
+  border: 1px solid black !important;
+  border-top-left-radius: 20px !important;
+  border-bottom-left-radius: 20px !important;
+  border-top-right-radius: 0 !important;
+  border-bottom-right-radius: 0 !important;
+  box-shadow: none !important;
+}
+
+.input {
+  background: royalblue;
+  border: 1px solid lightblue;
+  margin: 6.5px 1px 1px 0;
+  border-top-left-radius: 0px !important;
+  border-bottom-left-radius: 0px !important;
+  border-top-right-radius: 20px !important;
+  border-bottom-right-radius: 20px !important;
+  cursor: pointer;
+  margin-bottom: auto;
+  margin-right: auto;
+  margin-top: 20px;
+}
+
+.Search-bar {
+  display: inline-flex;
+  width: 50%;
+  margin: auto;
+  background-color: lightblue;
+}
+
+.menu {
+  width: 50%;
+  float: right;
+  background-color: lightblue;
+}
+/* Change the sub menus */
+.menu ul {
+  display: inline-flex;
+  float: left;
+}
+
+.menu ul li {
+  border-left: 1px solid lightblue;
+  list-style-type: none;
+  padding: 20px 20px;
+  text-align: center;
+  background-color: lightblue;
+  cursor: pointer;
+}
+
+.menu li {
+  display: inline-flex;
+  float: left;
+}
+
+.menu ul li a {
+  color: darkblue;
+}
+.fa-shopping-cart {
+  margin-right: 5px;
+  color: darkblue;
+}
+
+body {
+  font-family: 'Goldman', 'Bebas+Neue';
+}
+
+header {
+  background: lightblue;
+}
+/* Search bar */
+.Search-bar img {
+  width: 15%;
+  height: 150px;
+  background-color: lightblue;
+}
+.fa-search {
+  color: black;
+  width: 0px;
+  height: 20px;
+  text-align: center;
+  padding: 10px 27px;
+}
+
+/* Change width of search bar */
+#hid {
+  width: 500px;
+}
+
+/*Main bar */
+
+.main {
+  background-color: lightgray;
+  padding: 20px 0;
+  overflow: hidden;
+  margin-left: 0%;
+  margin: 0 2%;
+  width: 100%;
+}
+/* Resize images */
+.main img {
+  height: 128px;
+  width: 128px;
+  text-align: center;
+}
+
+.main ul {
+  list-style: none outside none;
+  margin: 0;
+  padding: 0;
+} /* Image banner */
+.slider img {
+  width: 100%;
+  height: 500px;
+  vertical-align: middle;
+}
+
+.main ul li {
+  justify-content: space-between;
+  float: left;
+  padding-bottom: 50px;
+  width: 33%;
+}
+
+.main ul li:hover {
+  background-color: darkgray;
+}
+
+.main ul li .info .title {
+  color: black;
+
+  display: inline-block;
+
+  font-size: 11px;
+
+  font-weight: bold;
+
+  line-height: 16px;
+
+  text-decoration: none;
+
+  text-transform: uppercase;
+
+  width: 150px;
+}
+
+.main ul li .info .title:hover {
+  color: black;
+}
+
+/* Sell */
+.sell ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: lightblue;
+}
+
+.sell li {
+  float: left;
+  line-height: 1em;
+
+  list-style: none outside none;
+
+  margin: 0;
+
+  position: relative;
+  background-color: lightblue;
+}
+.sell li a {
+  background-color: lightblue;
+  color: darkslategrey;
+  display: block;
+
+  font-size: 12px;
+
+  font-weight: bold;
+
+  line-height: 20px;
+
+  margin: 10 10 10 19px;
+
+  padding: 19px 18px 11px 24px;
+
+  text-decoration: none;
+
+  text-transform: uppercase;
+}
+
+/* Actions */
+.action a {
+  border: 1px solid white;
+  color: black;
+  display: block;
+  float: left;
+
+  font-weight: bold;
+  line-height: 16px;
+  padding: 5px;
+  text-decoration: none;
+}
+
+.action a:first-child {
+  color: crimson;
+  float: inline-flex;
+}
+#price {
+  background-color: darkgray;
+}
+.p {
+  background-color: lightblue;
+}
+
+i {
+  margin-left: 30px;
+}
+
+.img {
+  margin-left: 30px;
+}
+
+.slider img {
+  width: 100%;
+}
+
+.caption h4 {
+  background-color: darkblue;
+  color: lightblue;
+}
+
+.search-bar img {
+  width: 100%;
+}
+
+.img img:hover {
+  transform: scale(1.1);
+}
+
+.sell li:hover {
+  background-color: darkgray;
+}
+
+/* footer */
+footer {
+  width: 100vw;
+  display: block;
+
+  overflow: hidden;
+  padding: 70px 0;
+  box-sizing: border-box;
+  background-color: lightblue;
+}
+
+.footer .footer-first span {
+  color: blue;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 16px;
+  font-weight: 100;
+  display: block;
+  width: 100%;
+  padding-top: 50px;
+}
+.content {
+  display: block;
+  margin: 0 auto;
+  width: 1050px;
+  height: 100%;
+}
+
+.shadow-box {
+  box-shadow: 0 4px 8px 0 rgba(49, 45, 45, 0.2);
+  transition: 0.3s;
+}
+.shadow-box {
+  box-shadow: 0 0px 2px 0 rgba(0, 0, 0, 0.2);
+}
+.shadow-box {
+  justify-content: space-between;
+}
+
+/* Make website mobile friendly */
+@media screen and (max-width: 1224px) {
+  html,
+  body {
+    position: relative;
+    overflow-x: hidden;
+  }
+  .main ul li {
+    float: none;
+    width: 100%;
+  }
+
+  .footer {
+    padding: 20% 50% 4% 0%;
+  }
+
+  .subscribe form {
+    margin-left: 160px;
+    float: right;
+  }
+
+  .action {
+    margin-bottom: 30px;
+  }
+
+  .img {
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .info p {
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+  }
+  .price {
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+  }
+  .action {
+    padding-left: 42%;
+  }
+  .title-product {
+    padding-left: 42%;
+  }
+
+  .search-box {
+    margin-bottom: 25px;
+    padding-top: 40px;
+  }
+
+  .sell-menu ul li {
+    float: none;
+    font: 'Goldman', sans-serif;
+  }
+
+  .search-box img {
+    display: none;
+  }
+
+  .search-box {
+    margin-bottom: 29px;
+  }
+
+  .active {
+    transform: translate(20%);
+  }
+}
+
+.toggle .line1 {
+  transform: rotate(-45deg) translate(-5px, 9px);
+}
+.toggle .line2 {
+  opacity: 0;
+}
+.toggle .line3 {
+  transform: rotate(45deg) translate(-5px, -9px);
+}
+
+/*Contact us form */
+
+input[type='text'],
+select,
+textarea {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid royalblue;
+  border-radius: 4px;
+  box-sizing: border-box;
+  resize: vertical;
+}
+
+input[type='email'],
+select,
+textarea {
+  width: 100%;
+  padding: 8px;
+  border: 1px solid royalblue;
+  border-radius: 4px;
+  box-sizing: border-box;
+  margin-top: 8px;
+  margin-bottom: 16px;
+  resize: vertical;
+}
+
+input[type='submit'] {
+  background-color: blue;
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+input[type='submit']:hover {
+  background-color: royalblue;
+}
+
+.get {
+  border-radius: 5px;
+  background-color: royalblue;
+  padding: 20px;
+}
+
+input[list='city'] {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid royalblue;
+  border-radius: 4px;
+  box-sizing: border-box;
+  margin-top: 8px;
+  margin-bottom: 16px;
+  resize: vertical;
+}
+
+.btn1 {
+  background-color: blue;
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+.btn1:hover {
+  background-color: royalblue;
+}

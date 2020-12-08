@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <!--Social Media-->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <!--Google fonts-->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Goldman:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap"
+      rel="stylesheet"
+    />
+    <script src="contact.js"></script>
+    <title>WEB222 Store</title>
+    <link rel="stylesheet" href="style.css" />
+    <style></style>
+  </head>
+  <body>
+    <header class="header">
+      <section class="section">
+        <div class="intro">
+          <div class="text"></div>
+        </div>
+      </section>
+      <div class="header-Background"></div>
+      <div class="header-navigate">
+        <!--Create logo-->
+        <div class="Search-bar">
+          <img src="images/logo.png" alt="" />
+
+          <h4>PC Gaming store</h4>
+
+          <input id="hid" class="form" type="text" />
+          <!--Create Search icon, icons from fontawesome-->
+          <span id="hid2" class="input"><i class="fa fa-search"></i></span>
+        </div>
+        <!--Menu Class-->
+        <div class="menu">
+          <ul>
+            <li>
+              <!--Basket picture from fontAwesome.com-->
+              <a href="#"><i class="fa fa-shopping-cart"></i>cart</a>
+            </li>
+            <li><a href="%">Sign up</a></li>
+            <li><a href="%">Log in</a></li>
+          </ul>
+        </div>
+        <!--Sell menu-->
+        <div class="sell">
+          <ul>
+            <li id="home"><a href="index.html">Home</a></li>
+            <li id="Contact-Us"><a href="contact.html">Contact us</a></li>
+          </ul>
+        </div>
+      </div>
+    </header>
+    <!--Create category-->
+    <section class="categories">
+      <div id="slider" class="slider">
+        <!--Image-->
+      </div>
+      <div id="caption" class="caption"></div>
+    </section>
+    <selection class="main">
+      <h2 id="subtitle" class="about">Contact us form:</h2>
+    </selection>
+    <!--Form page-->
+    <div class="get-info">
+      <form action="https://httpbin.org/post" method="POST">
+        <fieldset>
+          <legend>Questions or concerns? Enter your inquiry below:</legend>
+          <label for="first-name">Enter your name:</label>
+          <input
+            type="text"
+            id="first-name"
+            name="firstname"
+            placeholder="Your first name: "
+            required
+          />
+          <!--Last name-->
+          <br />
+          <label for="last-name">Enter your last name:</label>
+          <input
+            type="text"
+            id="last-name"
+            name="lastname"
+            placeholder="Your last name: "
+            required
+          />
+          <!--Email Address-->
+          <br />
+          <label for="email">Email Address:</label>
+          <input
+            input
+            type="email"
+            id="email"
+            name="email"
+            placeholder="Your email address:"
+            required
+          />
+          <!--Address-->
+          <label for="address">Address:</label>
+          <input
+            type="text"
+            id="address"
+            name="address"
+            placeholder="Enter your address:"
+            required
+          />
+          <!--City-->
+          <br />
+          <label for="city">City:</label>
+          <input list="city" name="city" required placeholder="Enter your City:" />
+          <datalist id="city">
+            <option value="Toronto"></option>
+            <option value="York"></option>
+            <option value="Peel"></option>
+            <option value="Durham"></option>
+          </datalist>
+
+          <!--Postal code-->
+          <label for="pcode">Postal Code</label>
+          <input
+            placeholder="Enter your Postal Code:"
+            id="zip"
+            name="zip"
+            type="text"
+            pattern="^[a-zA-Z][0-9][a-zA-Z].[0-9][a-zA-Z][0-9]"
+            required
+          />
+          <p>What is your inquiry about?</p>
+          <!--Add Radio buttons-->
+          <input type="radio" id="question" name="inquiry" value="question" />
+          <label for="question">Inquires</label><br />
+          <input type="radio" id="comment" name="inquiry" value="comment" />
+          <label for="question">Commentss</label><br />
+          <input type="radio" id="problem" name="inquiry" value="problem" />
+          <label for="question">Order Problem</label>
+          <div id="ordercode"></div>
+          <!--Enter hidden input name-->
+          <br />
+          <label for="subject">Subject</label>
+          <input type="hidden" id="myinfo" name="myinfo" value="Justin Lau 106340193" />
+          <textarea
+            id="subject"
+            name="subject"
+            placeholder="Any other comments or inquiries:"
+            style="height:200px"
+          ></textarea>
+          <input type="submit" value="Submit" />
+        </fieldset>
+      </form>
+    </div>
+    <footer>
+      <div class="center-text row">
+        <div class="col-mid-4">
+          <h4>Follow us for updates</h4>
+          <a href="https://www.instagram.com" class="fa fa-instagram"></a>
+          <a href="https://www.facebook.com" class="fa fa-facebook"></a>
+          <a href="https://www.twitter.com" class="fa fa-twitter"></a>
+          <a href="https://www.snapchat.com" class="fa fa-snapchat"></a>
+        </div>
+        <div class="col-mid-4">
+          <p class="certified:">WEB222 page by: Justin Lau</p>
+        </div>
+        <div class="col-mid-4">
+          <form action="https://formspree.io/f/xbjpakno" method="POST">
+            <label for="email">Stay updated for future deals!</label>
+            <input type="email" name="email" id="email1" required />
+            <button type="submit" class="btn1" value="submit">Get notified!</button>
+          </form>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>
