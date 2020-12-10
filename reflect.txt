@@ -1,0 +1,23 @@
+During the development of my website, I had to develop an entire webpage, creating a home page featuring
+all of the products, create sub-menus, and a subscribe form at the bottom. But in this final assessment, we focused on creating a 'contact us' page, formatting the webpage so it is mobile friendly and of course static hosting the web page itself. One of the main features and input elements that I used for my contact
+us is mostly input elements that allow text so the user can enter what needs to be entered. But, I also had
+to make sure that there was a way to check the format in case the user entered something incorrectly, like if
+they left out an input box or they typed in something in the incorrect format. For example, email and postal code.
+For postal code, I had to use use a regEx in order to check the postal code format. This regEx was used in previous
+assignments. As for email, I used a pre-built id. Instead of text, I used the 'email' type attribute in order to get
+the email. RegEx is a more preferable method in my opinion since it gives you more functionality when it comes to checking
+text type attributes.
+
+In order for me to test if my forms were working, I had to check if the form page would throw any errors if I left any boxes
+unchecked or if I inputted something in the incorrect format. Normally, the built-in attribute types would throw an error whenever
+I leave something unchecked or if I enter an improper email format. But what the input I had to test out the most was the postal code.
+Unfortunately, this isn't built-in where the error exceptions would be provided for me so I had to actually hard code a format in order
+for the web form to throw me an error when it comes to the postal code. Sure, it'll throw an error if I left the box unchecked and tried
+to submit with it being empty but I didn't have a way to check the actual format without resorting to a regEx. In terms of finding any bugs
+in my implementation I had a bit of trouble formatting the postal code but I was fortunate that I was able to go back to previous assignments
+that I completed.
+
+In terms of advice, the advice I would give for future web developers is that create a concept of the webpage that you want to make. 
+Like the design of the actual web page and also make sure you are familiar with JavaScript and CSS. HTML is just the bare bone of the web page and it only provides so much. 
+CSS just adds some visuals to your website and JavaScript provides the functionality of the website. During my time in this course, the lessons I've learned are trial and error. 
+More specifically CSS, I had to constantly check the stuff I wanted was in the proper format and position. Other than that, making a website is complex but practice makes perfect.
